@@ -1,47 +1,36 @@
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
+//import gsap from "gsap";
+//import ScrollTrigger from "gsap/ScrollTrigger";
 import "./sass/style.scss";
 import Header from "./components/Layout/Header";
 import Home from "./pages/Home";
-import Project from "./pages/Project";
+import Creation from "./pages/Creation";
+import Formation from "./pages/Formation";
 import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
-    }
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <div className="App">
- 
-        <Header />
-        <div className="toggle-dark-mode-button">
-          <button onClick={toggleDarkMode}>Toggle Dark Mode</button>
-        </div>
-   
-
+      <Header />
       <div className="container">
-      <div className="home">
+        <div className="page">
           <Home />
         </div>
-        <div className="section-divider"></div>
-        <div className="project">
-          <Project />
+        <div className="page">
+          <Creation />
         </div>
-        <div className="about">
+        <div className="page">
+          <Formation />
+        </div>
+        <div className="page">
           <About />
         </div>
-        <div className="contact">
+        <div className="page">
+          <Portfolio />
+        </div>
+        <div className="page">
           <Contact />
         </div>
       </div>

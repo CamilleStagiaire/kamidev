@@ -1,10 +1,27 @@
+@import '../components/Layout/Header/style';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 body {
-    margin: auto;
-    color: rgb(86, 112, 112);
+ font-family: 'Poppins', sans-serif;
     background-image: url('../assets/background.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin: 0;
+ 
 }
 
 body.dark-mode {
@@ -12,29 +29,14 @@ body.dark-mode {
 }
 
 
-.main-nav {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px 20px;
-    z-index: 100;
-}
+/* Configuration de base pour chaque section/page */
+.page {
 
-.toggle-dark-mode-button {
-    text-align: right;
-    position: sticky;
-    top: 38px;
-    background-color: #333;
-    padding: 10px 20px;
-    z-index: 100;
-}
+  min-height: 100vh;
+ // min-width: 100vw; 
 
-.home,
-.project,
-.about,
-.contact {
-
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  justify-content: center; 
 
 }
+

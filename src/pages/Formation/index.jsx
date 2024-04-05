@@ -1,8 +1,8 @@
 import logo from "../../assets/4.jpg";
-function Contact() {
+function Formation() {
   return (
-    <div className="contact">
-      <h1>Contact</h1>
+    <div className="formation">
+      <h1>Formation</h1>
       <div className="test">
         <img src={logo} alt="Argent Bank Logo" />
         <p>Test1000</p>
@@ -15,4 +15,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Formation;

@@ -1,9 +1,9 @@
 import logo from "../../assets/1.jpg";
 
-function Home() {
+function Portfolio() {
   return (
-    <div className="home">
-      <h1>Home</h1>
+    <div className="portfolio">
+      <h1>Porfolio</h1>
       <div className="test">
         <img src={logo} alt="Argent Bank Logo" />
         <p>Test1</p>
@@ -15,4 +15,4 @@ function Home() {
     </div>
   );
 }
-export default Home;
+export default Portfolio;
